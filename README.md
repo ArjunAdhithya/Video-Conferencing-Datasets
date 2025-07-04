@@ -140,37 +140,41 @@
 - **Limitations**: Audio-only
 
 ---
-## Dataset Comparison Table: All Datasets
+### Dataset Table: All Datasets
 
-| Dataset Name          | Modality            | Size / Duration                          | Access         | Key Purpose                                      |
-|----------------------|---------------------|------------------------------------------|----------------|--------------------------------------------------|
-| **VCD**              | Video               | 160 clips                                | GitHub         | Codec evaluation in conferencing settings        |
-| **Video Call MOS**   | Video               | 1,467 degraded Teams videos              | GitHub         | Video call quality prediction                    |
-| **Zoom-DF**          | Video               | Small synthetic Zoom-style clips         | Request Form   | Motion-based deepfake detection                  |
-| **FaceForensics++**  | Video               | 5,000 videos (1,000 real + 4,000 fake)   | GitHub         | Classic facial manipulation benchmark            |
-| **DFDC**             | Audio + Video       | 128K videos (104K fake)                  | Kaggle         | Large-scale deepfake detection challenge         |
-| **DeeperForensics-1.0** | Video           | 59K videos (11K fake)                    | Official Site  | Perturbation-aware realism testing               |
-| **ForgeryNet**       | Video + Image       | 221K videos + 2.9M images                | Google Drive   | Multi-type forgery detection and localization    |
-| **FakeAVCeleb**      | Audio + Video       | 20K videos                               | Kaggle         | AV sync deepfakes using celebrity interviews     |
-| **DeepSpeak**        | Audio + Video       | ~13K videos, ~100 hours total            | HuggingFace    | Webcam-style, multimodal, scripted recordings     |
-| **LAV-DF**           | Audio + Video       | 100K+ clips                              | HuggingFace    | Partial/sync-manipulated forgeries               |
-| **Deepfake-Eval-2024** | Audio + Video + Image | 45h video, 56.5h audio, 1,975 images | Request         | Real-world multilingual deepfakes                |
-| **KoDF**             | Video               | 237K videos (175K fake)                  | Request Form   | Korean language deepfake repository              |
-| **WildDeepfake**     | Video               | 7,314 clips from 707 online videos       | GitHub         | Uncontrolled real-world deepfakes                |
-| **ASVspoof 2019/21** | Audio               | 10K–100K+ audio clips                    | Registration   | Audio spoofing (TTS/VC) benchmarks               |
-| **WaveFake**         | Audio               | 134K utterances (EN & JP)                | Zenodo/Kaggle  | Multilingual audio deepfake detection            |
+| Dataset Name           | Modality         | Size / Duration                | Access Status      | Year | Conferencing Relevance | Link |
+|------------------------|------------------|--------------------------------|---------------------|------|--------------------------|------|
+| Microsoft VCD          | Video            | 160 clips                      | Active (GitHub)     | 2021 | Yes                      | [Link](https://github.com/microsoft/VCD) |
+| Video Call MOS         | Video            | 1,467 degraded clips           | Active (GitHub)     | 2022 | Yes                      | [Link](https://github.com/microsoft/Video_Call_MOS) |
+| Zoom‑DF                | Video            | Small Zoom-style fakes         | Request Required    | 2023 | Yes                      | [Paper](https://dl.acm.org/doi/10.1145/3579371.3600421) |
+| FaceForensics++        | Video            | 5,000 clips                    | Active (GitHub)     | 2019 | No                       | [Link](https://github.com/ondyari/FaceForensics) |
+| DFDC                   | Video + Audio    | 128K videos (104K fake)        | Active (Kaggle)     | 2020 | No                       | [Link](https://www.kaggle.com/competitions/deepfake-detection-challenge/data) |
+| DeeperForensics-1.0    | Video            | 59K videos                     | Request Required    | 2020 | No                       | [Link](https://github.com/EndlessSora/DeeperForensics-1.0) |
+| ForgeryNet             | Video + Image    | 221K videos + 2.9M images      | Active (Google Drive) | 2021 | No                    | [Link](https://github.com/DeviantArt/ForgeryNet) |
+| FakeAVCeleb            | Video + Audio    | 20K videos                     | Active (Kaggle)     | 2022 | Indirect                 | [Link](https://www.kaggle.com/datasets/mohamedali262/fakeavceleb) |
+| DeepSpeak              | Video + Audio    | ~13K videos (~100h)            | Active (HuggingFace)| 2023 | Yes                      | [Link](https://huggingface.co/datasets/crestylab/deepspeak) |
+| LAV-DF                 | Video + Audio    | 100K+ clips                    | Active (HuggingFace)| 2023 | Indirect                 | [Link](https://huggingface.co/datasets/LAV-DF) |
+| Deepfake-Eval-2024     | Video + Audio + Image | 45h video, 56.5h audio, 1,975 images | Request Required | 2024 | Indirect            | [Link](https://github.com/BAAI-Open/Deepfake-Eval) |
+| KoDF                   | Video            | 237K videos                    | Request Required    | 2021 | Indirect                 | [Link](https://github.com/nclab/KDF) |
+| WildDeepfake           | Video            | 7,314 clips from online videos | Active (GitHub)     | 2020 | Indirect                 | [Link](https://github.com/deepfake-inthewild/wilddeepfake-dataset) |
+| DF-Wild (UMD)          | Video            | ~48h of YouTube-style videos   | Active (GitHub)     | 2021 | Yes                      | [Link](https://github.com/granite-datasets/df-wild) |
+| ASVspoof 2019/2021     | Audio            | 10K–100K+ clips                | Request Required    | 2019/21 | No                   | [Link](https://www.asvspoof.org/) |
+| WaveFake               | Audio            | 134K utterances                | Active (Zenodo)     | 2021 | No                       | [Link](https://zenodo.org/record/5773843) |
+| AVCAffe                | Video + Audio    | Cognitive load in calls        | Request Required    | 2022 | Yes                      | [Link](https://zenodo.org/record/6464358) |
+| EasyPortrait           | Video (Face)     | Real-time portrait detection   | Active (GitHub)     | 2022 | Yes                      | [Link](https://github.com/deforum/easyportrait) |
 
 ---
 
-## Focused Dataset Table: Video Conferencing–Related Resources
+### Focused Table: Video Conferencing–Related Datasets
 
-| Dataset Name         | Modality         | Size / Duration               | Access        | Unique Focus                                        |
-|----------------------|------------------|-------------------------------|---------------|-----------------------------------------------------|
-| **VCD**              | Video            | 160 clips                     | GitHub        | Realistic webcam/meeting-style compression testing  |
-| **Video Call MOS**   | Video            | 1,467 degraded videos         | GitHub        | Teams video with simulated network degradation      |
-| **Zoom‑DF**          | Video            | Small synthetic Zoom-style set| Request Form  | Head/hand motion fakes in conferencing setup        |
-| **DeepSpeak v1.0**   | Audio + Video    | ~13K videos, ~100h total      | HuggingFace   | Static talking-head webcam clips                    |
-| **DF-Wild**          | Video            | ~7K clips (~48h video total)  | GitHub        | Web-conferencing-like videos from YouTube           |
-
+| Dataset Name       | Modality      | Access Status     | Year | Conferencing Focus         |
+|--------------------|---------------|-------------------|------|-----------------------------|
+| Microsoft VCD      | Video         | Active (GitHub)   | 2021 | Real-world webcam calls     |
+| Video Call MOS     | Video         | Active (GitHub)   | 2022 | Teams with degradation      |
+| Zoom‑DF            | Video         | Request Required  | 2023 | Motion-based Zoom fakes     |
+| DeepSpeak          | Audio + Video | Active (HF)       | 2023 | Webcam-style talking heads  |
+| DF-Wild (UMD)      | Video         | Active (GitHub)   | 2021 | In-the-wild conferencing    |
+| AVCAffe            | Video + Audio | Request Required  | 2022 | Cognitive load in meetings  |
+| EasyPortrait       | Video (Face)  | Active (GitHub)   | 2022 | Virtual background testing  |
 
 ---
