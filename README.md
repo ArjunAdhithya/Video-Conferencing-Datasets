@@ -24,7 +24,7 @@
 - **Purpose**: Motion-based deepfake detection for conferencing  
 - **Content**: Small set of synthetic Zoom-style clips  
 - **Modality**: Video only  
-- **Access**: By request (form submission)  
+- **Access**: By request (form submission) [paper](https://dl.acm.org/doi/abs/10.1145/3494109.3527195) 
 - **Strengths**: Head/hand movement fakes, realistic Zoom context  
 - **Limitations**: Very limited size, no facial blend fakes
 
@@ -52,7 +52,7 @@
 - **Purpose**: Realistic perturbation testing  
 - **Content**: 59,475 videos (48.4K real, 11K fake)  
 - **Modality**: Video  
-- **Access**: Direct from official website  
+- **Access**: Direct from official website [github](https://github.com/EndlessSora/DeeperForensics-1.0)
 - **Strengths**: Real-world conditions simulated (compression, blur, lighting)  
 - **Limitations**: One deepfake generation pipeline (DF-VAE)
 
@@ -146,7 +146,7 @@
 |------------------------|------------------|--------------------------------|---------------------|------|--------------------------|------|
 | Microsoft VCD          | Video            | 160 clips                      | Active (GitHub)     | 2021 | Yes                      | [Link](https://github.com/microsoft/VCD) |
 | Video Call MOS         | Video            | 1,467 degraded clips           | Active (GitHub)     | 2022 | Yes                      | [Link](https://github.com/microsoft/Video_Call_MOS) |
-| Zoom‑DF                | Video            | Small Zoom-style fakes         | Request Required    | 2023 | Yes                      | [Paper](https://dl.acm.org/doi/10.1145/3579371.3600421) |
+| Zoom‑DF                | Video            | Small Zoom-style fakes         | Request Required    | 2023 | Yes                      | [Paper](https://dl.acm.org/doi/abs/10.1145/3494109.3527195) |
 | FaceForensics++        | Video            | 5,000 clips                    | Active (GitHub)     | 2019 | No                       | [Link](https://github.com/ondyari/FaceForensics) |
 | DFDC                   | Video + Audio    | 128K videos (104K fake)        | Active (Kaggle)     | 2020 | No                       | [Link](https://www.kaggle.com/competitions/deepfake-detection-challenge/data) |
 | DeeperForensics-1.0    | Video            | 59K videos                     | Request Required    | 2020 | No                       | [Link](https://github.com/EndlessSora/DeeperForensics-1.0) |
@@ -175,6 +175,6 @@
 | DeepSpeak          | Audio + Video | Active (HF)       | 2023 | Webcam-style talking heads  |
 | DF-Wild (UMD)      | Video         | Active (GitHub)   | 2021 | In-the-wild conferencing    |
 | AVCAffe            | Video + Audio | Request Required  | 2022 | Cognitive load in meetings  |
-| EasyPortrait       | Video (Face)  | Active (GitHub)   | 2022 | Virtual background testing  |
+| EasyPortrait       | Video (Face)  | Active (GitHub)   | 2022 | Face Parsing & Portrait Segmentation |
 
 ---
